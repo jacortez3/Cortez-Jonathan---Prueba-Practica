@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Prueba Practica</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">Jonathan Cortez</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="..." /></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Estudiante</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Ejercicio 1: Creación de Componente Simple</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Ejercicio 2: Comunicación entre Componentes</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Ejercicio 3: Uso de Slots</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Ejercicio 4: Integración con API Externa</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Ejercicio 5: Gestión de Estado</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- About-->
+            <section class="resume-section" id="about">
+                <div class="resume-section-content">
+                    <h1 class="mb-0">
+                        Jonathan
+                        <span class="text-primary">Cortez</span>
+                    </h1>
+                    <div class="subheading mb-5">
+                        Evaluación 1er Parcial (Parte Práctica).
+                    </div>
+                    <p class="lead mb-5">Crear un repositorio en Github, vincularlo con su carpeta local, adjunte el desarrollo de cada microproyecto dentro del repositorio github, dicho repositorio compartalo mediante un documento pdf.</p>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Experience-->
+            <section class="resume-section" id="experience">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Ejercicio 1: Creación de Componente Simple</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+							<h3 class="mb-0">
+								<ol>
+								  <li>Crea un nuevo componente web llamado saludo-component.</li>
+								  <li>El componente debe renderizar un saludo simple, como "¡Hola, Mundo!".</li>
+								  <li>Utiliza el Shadow DOM para encapsular el contenido.</li>
+								</ol>
+							</h3>
+							
+							<!-- Ejercicio 1: Creación de Componente Simple -->
+							<div class="subheading mb-3">
+								<saludo-component></saludo-component>
+							</div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Education-->
+            <section class="resume-section" id="education">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Ejercicio 2: Comunicación entre Componentes</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">
+								<ol>
+									<li>Crea dos componentes web: emisor-component y receptor-component.</li>
+									<li>El componente emisor-component debe tener un botón.</li>
+									<li>Al hacer clic en el botón, el componente emisor-component emite un evento personalizado con un mensaje. </li>
+									<li>El componente receptor-component escucha ese evento y muestra el mensaje recibido. </li>
+								</ol>
+							</h3>
+							
+							<!-- Ejercicio 2: Comunicación entre Componentes -->
+                            <div class="subheading mb-3">
+
+								<emisor-component></emisor-component>
+								<receptor-component></receptor-component>
+							</div>                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Skills-->
+            <section class="resume-section" id="skills">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Ejercicio 3: Uso de Slots</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">
+								<ol>
+									<li>Desarrolla un componente llamado contenedor-component.</li>
+									<li>El componente debe tener un área de encabezado y un área de contenido, utilizando slots.</li>
+									<li>Permite que el contenido del encabezado y del cuerpo sea personalizado cuando se utiliza el componente.</li>
+								</ol>
+							</h3>
+							
+							<!-- Ejercicio 3: Uso de Slots -->
+							<contenedor-component>
+							
+							  <div slot="encabezado">
+								<h1>Encabezado Personalizado</h1>
+							  </div>
+
+							  <div slot="cuerpo">
+								<p>Contenido del cuerpo personalizado.</p>
+							  </div>
+							</contenedor-component>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Interests-->
+            <section class="resume-section" id="interests">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Ejercicio 4: Integración con API Externa</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">
+								<ol>
+									<li>Crea un componente llamado user-list-component.</li>
+									<li>Este componente debe obtener datos de una API externa que proporciona una lista de usuarios.</li>
+									<li>Muestra la lista de usuarios en el componente.</li>
+								</ol>
+							</h3>
+							
+							<!-- Ejercicio 4: Integración con API Externa -->
+							<user-list-component></user-list-component>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Awards-->
+            <section class="resume-section" id="awards">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Ejercicio 5: Gestión de Estado</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">
+								<ol>
+									<li>Desarrolla un componente contador-component</li>
+									<li>El componente debe mostrar un número que puede incrementarse y disminuirse.</li>
+									<li>Utiliza una variable interna para gestionar el estado del contador</li>
+									<li>Proporciona botones para incrementar y disminuir el contador</li>
+								</ol>
+							</h3>
+							
+							<!-- Ejercicio 5: Gestión de Estado -->
+							<contador-component></contador-component>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
